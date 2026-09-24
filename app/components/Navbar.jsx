@@ -10,7 +10,7 @@ export default function Navbar() {
   const { plan, saved } = usePlan();
 
   return (
-    <header className="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+    <header className="sticky top-0 z-50 bg-[#0b0c0e]/90 backdrop-blur-md border-b border-[#181920]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Left: Logo */}
         <Link
@@ -26,23 +26,23 @@ export default function Navbar() {
           <span>FITLOG</span>
         </Link>
 
-        {/* Middle: Links */}
-        <nav className="flex items-center gap-6">
+        {/* Center: Nav links */}
+        <nav className="flex items-center gap-2 bg-[#121318] p-1 rounded-full border border-[#1e2029]">
           <Link
             href="/"
-            className={`font-medium text-sm transition-colors ${
+            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition ${
               pathname === "/"
-                ? "text-[#ccff00]"
+                ? "bg-[#1e2029] text-[#ccff00]"
                 : "text-zinc-400 hover:text-white"
             }`}
           >
-            Workout
+            Workouts
           </Link>
           <Link
             href="/my-plan"
-            className={`font-medium text-sm transition-colors ${
+            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition ${
               pathname === "/my-plan"
-                ? "text-[#ccff00]"
+                ? "bg-[#1e2029] text-[#ccff00]"
                 : "text-zinc-400 hover:text-white"
             }`}
           >
@@ -54,20 +54,20 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             href="/my-plan"
-            className="flex items-center gap-1.5 bg-[#ccff00] text-black font-semibold text-xs px-3 py-1.5 rounded-full hover:bg-lime-400 transition"
+            className="flex items-center gap-1.5 text-xs font-semibold text-zinc-300 hover:opacity-90 transition"
           >
             <span>Plan</span>
-            <span className="bg-black text-white px-1.5 py-0.5 rounded-full text-[10px]">
+            <span className="bg-[#ccff00] text-black font-bold w-5 h-5 rounded-full flex items-center justify-center text-[11px]">
               {plan.length}
             </span>
           </Link>
 
           <Link
             href="/my-plan"
-            className="flex items-center gap-1.5 border border-zinc-700 text-zinc-300 font-semibold text-xs px-3 py-1.5 rounded-full hover:border-zinc-500 transition"
+            className="flex items-center gap-1.5 text-xs font-semibold text-zinc-300 hover:opacity-90 transition"
           >
             <span>Saved</span>
-            <span className="bg-zinc-800 text-zinc-300 px-1.5 py-0.5 rounded-full text-[10px]">
+            <span className="border border-zinc-700 bg-[#121318] text-zinc-300 w-5 h-5 rounded-full flex items-center justify-center text-[11px]">
               {saved.length}
             </span>
           </Link>

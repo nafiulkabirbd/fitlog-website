@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "FitLog — Workout Library",
+  title: "FitLog - Workout Library",
   description:
     "A dark, no-nonsense gym companion: pick a lift, lock it into todays plan.",
 };

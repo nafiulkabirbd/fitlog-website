@@ -12,7 +12,7 @@ export default function Footer() {
           />
           <span>FITLOG</span>
         </div>
-        <p>© 2026 FitLog — Workout Library. Train hard, log honest.</p>
+        <p>© 2026 FitLog - Workout Library. Train hard, log honest.</p>
       </div>
     </footer>
   );
