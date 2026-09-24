@@ -31,25 +31,27 @@ The application features a modern dark aesthetic inspired by performance gym app
 
 <table>
   <tr>
-    <td width="33%" align="center">
+    <td width="50%" align="center">
       <h3>📚 Workout Library</h3>
       <p>Browse a detailed collection of exercises covering chest, back, legs, core, and full-body workouts.</p>
     </td>
-    <td width="33%" align="center">
+    <td width="50%" align="center">
       <h3>🗓️ Personalized Daily Plan</h3>
       <p>Add up to 5 target exercises to your daily routine with real-time calorie and time calculation.</p>
-    </td>
-    <td width="33%" align="center">
-      <h3>📊 Analytics & Metrics</h3>
-      <p>Track metrics such as target muscle groups, estimated calorie burn, duration, and exercise difficulty.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
+      <h3>📊 Analytics & Metrics</h3>
+      <p>Track metrics such as target muscle groups, estimated calorie burn, duration, and exercise difficulty.</p>
+    </td>
+    <td width="50%" align="center">
       <h3>💾 Local Persistence</h3>
       <p>Save favorite workouts and maintain your active plan seamlessly using LocalStorage support.</p>
     </td>
-    <td width="50%" align="center" colspan="2">
+  </tr>
+  <tr>
+    <td width="100%" align="center" colspan="2">
       <h3>⚡ Dynamic Filtering & Sorting</h3>
       <p>Sort planned routines dynamically by duration, calories burned, or rating metrics.</p>
     </td>
